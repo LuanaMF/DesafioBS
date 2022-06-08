@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #363636;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="112.0" prefWidth="608.0">
+         <children>
+            <Label fx:id="mensagem" layoutX="164.0" layoutY="96.0" prefHeight="17.0" prefWidth="236.0" />
+            <Label layoutX="228.0" prefHeight="75.0" prefWidth="129.0" text="Login" textFill="FORESTGREEN">
+               <font>
+                  <Font name="Times New Roman" size="51.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutY="121.0" prefHeight="273.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="94.0" layoutY="1.0" prefHeight="271.0" prefWidth="412.0" style="-fx-border-color: #228B22;">
+               <children>
+                  <PasswordField fx:id="senha" layoutX="132.0" layoutY="163.0" promptText="Digite sua senha" />
+                  <Button fx:id="botaoLogin" layoutX="152.0" layoutY="224.0" mnemonicParsing="false" onAction="#logar" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: #228b22;" text="Acessar" textFill="YELLOW" />
+                  <Label layoutX="39.0" layoutY="162.0" text="Senha" textFill="YELLOW">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="33.0" layoutY="72.0" text="Usuário" textFill="YELLOW">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usuario" layoutX="132.0" layoutY="73.0" promptText="Digite seu usuário" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
