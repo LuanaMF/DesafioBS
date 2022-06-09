@@ -71,7 +71,7 @@ public class TelaAdministradorController {
 	 * @throws ScriptException
 	 * @throws NoSuchMethodException
 	 */
-	public void gera() throws IOException, ScriptException, NoSuchMethodException {
+	public void gera() throws IOException {
 		
 		File gif = new File(caminhoFoto);
 		 
